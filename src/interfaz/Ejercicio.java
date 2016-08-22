@@ -95,13 +95,23 @@ public class Ejercicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
-
-        // TODO add your handling code here:
+    
+        double cuota1=(80.000*35)/100;
+        double cuota2=((80.000*65)/100);
+        double op=cuota2/12;
+        txtCuotaInicial.setText(""+cuota1);
+        lblResto.setText(""+op);
+        lblDos.setText(""+cuota2);
+         
     }//GEN-LAST:event_cmdCalcularActionPerformed
 
     private void cmdBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBorrarActionPerformed
 
-        
+        txtCuotaInicial.setText("");
+        lblDos.setText("");
+        lblResto.setText(""); 
+        txtCuotaInicial.requestFocusInWindow();
+
     }//GEN-LAST:event_cmdBorrarActionPerformed
 
     private void txtCuotaInicialKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCuotaInicialKeyTyped
